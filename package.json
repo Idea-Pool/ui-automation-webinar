@@ -1,0 +1,22 @@
+{
+  "name": "ui-automation-webinar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run wd:update",
+    "wd:update": "node node_modules/protractor/bin/webdriver-manager update",
+    "test:cucumber": "node node_modules/protractor/bin/protractor ./cucumber/protractor.config.js",
+    "test:mocha": "node node_modules/protractor/bin/protractor ./mocha/protractor.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.1",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "2.3.*",
+    "mocha": "^3.5.0",
+    "protractor": "^5.1.2",
+    "protractor-cucumber-framework": "^4.0.3"
+  }
+}

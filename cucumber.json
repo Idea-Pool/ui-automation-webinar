@@ -1,0 +1,30 @@
+[
+  {
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Teszt",
+    "tags": [],
+    "uri": "C:\\Work\\ui-automation-webinar\\cucumber\\features\\test.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Teszt",
+        "tags": [],
+        "id": "teszt;teszt",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Teszt",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 3
+          }
+        ]
+      }
+    ],
+    "id": "teszt"
+  }
+]
