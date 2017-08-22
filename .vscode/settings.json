@@ -1,0 +1,11 @@
+{
+    "cucumberautocomplete.steps": [
+        "cucumber/step_definitions/**/*.js"
+    ],
+    "cucumberautocomplete.syncfeatures": "cucumber/features/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "npm.enableScriptExplorer": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "mocha.enabled": true
+}
