@@ -3,23 +3,28 @@ Feature: EPAM job searching
   I want to browser through EPAM Job offers by various criteria
   So I can find to best fitting offer for me
 
-  Scenario: Searching for a job
+  Scenario Outline: Searching for a job - <PositionName>
     Given the career page is opened
     Then the logo should be visible
     And the search form should be visible
 
-    When Debrecen, Hungary is selected in the location filter box
-    Then Debrecen should be selected in the location filter box
+    When <City>, <Country> is selected in the location filter box
+    Then <City> should be selected in the location filter box
 
-    When Software Test Engineering is selected in the department filter box
-    Then Software Test Engineering should be selected in the department filter box
+    When <Department> is selected in the department filter box
+    Then <Department> should be selected in the department filter box
 
     When the search button is clicked on
-    Then there should be a job offer for Test Automation Engineer position
-    And the department of the Test Automation Engineer position should be Software Test Engineering
-    And the location of the Test Automation Engineer position should be Debrecen, Hungary
-    And the apply button of the Test Automation Engineer position should be visible
+    Then there should be a job offer for <PositionName> position
+    And the department of the <PositionName> position should be <Department>
+    And the location of the <PositionName> position should be <City>, <Country>
+    And the apply button of the <PositionName> position should be visible
 
-    When the apply button of the Test Automation Engineer position is clicked on
-    Then the description of the job offer should contain "Test Automation Engineer"
-    And the description of the job offer should contain "Debrecen"
+    When the apply button of the <PositionName> position is clicked on
+    Then the description of the job offer should contain "<PositionName>"
+    And the description of the job offer should contain "<City>"
+
+    Examples:
+      | Country | City     | Department                | PositionName              |
+      | Hungary | Debrecen | Software Test Engineering | Test Automation Engineer  |
+      | Belarus | Minsk    | Software Architecture     | Test Automation Architect |
