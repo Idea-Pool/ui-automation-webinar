@@ -1,0 +1,14 @@
+[
+  {
+    "Country": "Hungary",
+    "City": "Debrecen",
+    "Department": "Software Test Engineering",
+    "PositionName": "Test Automation Engineer"
+  },
+  {
+    "Country": "Belarus",
+    "City": "Minsk",
+    "Department": "Software Architecture",
+    "PositionName": "Test Automation Architect"
+  }
+]
