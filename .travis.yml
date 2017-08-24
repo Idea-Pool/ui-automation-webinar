@@ -1,11 +1,14 @@
 language: node_js
+dist: trusty
+addons:
+  chrome: stable
 node_js:
 - 6
 - 8
 git:
   depth: 3
 script:
-- npm run test:mocha
-- npm run test:cucumber
+- xvfb-run npm run test:mocha
+- xvfb-run npm run test:cucumber
 notifications:
   email: false
