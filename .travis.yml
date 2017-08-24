@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- 6
+- 8
+git:
+  depth: 3
+script:
+- npm run test:mocha
+- npm run test:cucumber
+notifications:
+  email: false
