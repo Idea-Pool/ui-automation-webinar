@@ -28,6 +28,8 @@ exports.config = {
         global.expect = chai.expect;
 
         browser.waitForAngularEnabled(false);
-        return browser.manage().window().maximize().catch(console.warn);
+        return browser.manage().window().maximize().catch(() => {
+            return browser.manage().window().setSize(1800, 1012);
+        });
     }
 };
