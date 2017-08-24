@@ -1,6 +1,9 @@
 'use strict';
 
 const GLOBAL_TIMEOUT = 40e3;
+const os = require('os');
+const path = require('path');
+const requireIt = require('require-it');
 
 exports.config = {
     specs: 'features/**/*.feature',
@@ -15,6 +18,7 @@ exports.config = {
     },
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
+    chromeDriver: path.join(requireIt.directory('protractor'), 'node_modules', 'webdriver-manager', 'selenium', 'chromedriver_2.31' + (os.platform() === 'win32' ? '.exe' : '')),
     onPrepare: function () {
         global.GLOBAL_TIMEOUT = GLOBAL_TIMEOUT;
         global.ec = protractor.ExpectedConditions;
