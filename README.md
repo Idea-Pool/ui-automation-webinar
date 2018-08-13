@@ -17,3 +17,7 @@ To run the Mocha tests:
 ```bash
 npm run test:mocha
 ```
+
+## VSCode
+
+Use [Cucumber (Gherkin) Full Support](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete) plugin
