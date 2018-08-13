@@ -20,4 +20,6 @@ npm run test:mocha
 
 ## VSCode
 
-Use [Cucumber (Gherkin) Full Support](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete) plugin
+Plugins to install:
+* [Cucumber (Gherkin) Full Support](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete) plugin
+* [NPM scripts](https://marketplace.visualstudio.com/items?itemName=traBpUkciP.vscode-npm-scripts)
