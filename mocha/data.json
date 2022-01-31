@@ -1,0 +1,20 @@
+[
+  {
+    "Country": "Hungary",
+    "City": "Debrecen",
+    "Skills": "Software Test Engineering",
+    "PositionName": "Test Automation Engineer"
+  },
+  {
+    "Country": "Belarus",
+    "City": "Minsk",
+    "Skills": "Business and Data Analysis",
+    "PositionName": "Analyst"
+  },
+  {
+    "Country": "Spain",
+    "City": "Malaga",
+    "Skills": "Marketing and Communications",
+    "PositionName": "Marketing"
+  }
+]
