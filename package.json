@@ -9,8 +9,23 @@
     "test:cucumber": "protractor ./cucumber/protractor.config.js",
     "test:mocha": "protractor ./mocha/protractor.config.js"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idea-pool/ui-automation-webinar.git"
+  },
+  "keywords": [
+    "CucumberJS",
+    "Protractor"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "author": "Idea Pool <ideapool@epam.com>",
+  "license": "See LICENSE",
+  "bugs": {
+    "url": "https://github.com/idea-pool/ui-automation-webinar/issues"
+  },
+  "homepage": "https://github.com/idea-pool/ui-automation-webinar#readme",
   "dependencies": {
     "chai": "^4.3.6",
     "chai-as-promised": "^7.1.1",
