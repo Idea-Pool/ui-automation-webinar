@@ -1,8 +1,8 @@
 {
   "name": "ui-automation-webinar",
-  "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.2",
+  "description": "Seed code for UI automation webinar",
+  "private": true,
   "scripts": {
     "postinstall": "npm run wd:update",
     "wd:update": "webdriver-manager update",
@@ -12,12 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.3.0",
+    "chai": "^4.3.6",
     "chai-as-promised": "^7.1.1",
     "cucumber": "^6.0.5",
-    "mocha": "^8.2.1",
+    "mocha": "^9.2.2",
     "protractor": "^7.0.0",
-    "protractor-cucumber-framework": "^6.2.1",
-    "require-it": "^2.0.0"
+    "protractor-cucumber-framework": "^8.4.2",
+    "require-it": "^2.1.1"
   }
 }
